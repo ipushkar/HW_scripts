@@ -13,9 +13,9 @@ if [ $? == 0 ]
 					read -p "Enter NEW folder name: " value3
 						if [ -d $value3 ]
 							then 
-							echo '<< Rename succes >>'
+							echo '<< Folder was renamed >>'
 						 else
-						echo '<< Rename failed >>'
+						echo "<< Folder wasn't renamed >>"
 		  				fi
 			
 			fi
