@@ -1,4 +1,7 @@
 #!/bin/bash
 #
-yum install mariadb && mysql -u root
+yum -y install mariadb-server mariadb 
+systemctl start mariadb
+systemctl enable mariadb
+mysql -u root
 # :DD
