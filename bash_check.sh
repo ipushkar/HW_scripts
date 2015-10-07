@@ -8,13 +8,14 @@ if [ $? == 0 ]
 			if [ -d $value2 ]
 				then 
 				echo "Folder exists, rename failed"
-				read -p "Enter NEW folder name: " value3
-					if [ -d $value3 ]
-						then 
-						echo 'Rename succes'
-					 else
-					  echo 'Rename failed'
-		  			fi
+				else
+					read -p "Enter NEW folder name: " value3
+						if [ -d $value3 ]
+							then 
+							echo 'Rename succes'
+						 else
+						echo 'Rename failed'
+		  				fi
 			
 			fi
 	else 
