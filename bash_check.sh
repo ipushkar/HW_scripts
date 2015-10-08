@@ -7,7 +7,7 @@ if [ $? == 0 ]
 		read -p "Enter old folder name: " value2
 			if [ -d $value2 ]
 				then 
-				echo "Folder exists, rename failed"
+				echo "<< Folder exists, rename failed >>"
 				else
 					echo "<< Old folder doesn't exist >>"
 					read -p "Enter NEW folder name: " value3
