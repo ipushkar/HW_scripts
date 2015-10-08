@@ -13,4 +13,4 @@ Grant all privileges on *.* to test1212@'%' identified by 'pass' with grant opti
 Flush PRIVILEGES;
 EOT
 mysql -u test1212 -ppass -e "show databases;"
-echo "Mariadb is installed, and works."
+echo "<< Mariadb is installed, and works. >>"
