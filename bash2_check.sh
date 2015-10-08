@@ -12,4 +12,4 @@ Grant all privileges on *.* to test1212@localhost identified by 'pass' with gran
 Grant all privileges on *.* to test1212@'%' identified by 'pass' with grant option;
 Flush PRIVILEGES;
 EOT
-mysql -u test1212 -ppass "Show databases;"
+mysql -u test1212 -ppass -e "show databases;"
