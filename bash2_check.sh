@@ -16,6 +16,8 @@ Grant Select on *.* to test12@'%' identified by 'pass' with grant option;
 Flush PRIVILEGES;
 EOT
 mysql -u test12 -ppass -e "show databases;"
-mysql -u test1212 -ppass -e "show grants for *@*;"
+mysql -u test1212 -ppass -e "show grants for test1212;"
+sleep 5
+mysql -u test1212 -ppass -e "show grants for test1212;"
 
 echo "<< Mariadb is installed, and works. >>"
