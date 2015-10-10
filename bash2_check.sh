@@ -10,7 +10,12 @@ mysql -u root <<EOT
 Create user 'test1212'@'localhost' identified by 'pass';
 Grant all privileges on *.* to test1212@localhost identified by 'pass' with grant option;
 Grant all privileges on *.* to test1212@'%' identified by 'pass' with grant option;
+Create user 'test12'@'localhost' identified by 'pass';
+Grant Select on *.* to test12@localhost identified by 'pass' with grant option;
+Grant Select on *.* to test12@'%' identified by 'pass' with grant option;
 Flush PRIVILEGES;
 EOT
-mysql -u test1212 -ppass -e "show databases;"
+mysql -u test12 -ppass -e "show databases;"
+mysql -u test1212 -ppass -e "show grants for *@*;"
+
 echo "<< Mariadb is installed, and works. >>"
