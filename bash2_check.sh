@@ -18,6 +18,6 @@ EOT
 mysql -u test12 -ppass -e "show databases;"
 mysql -u test1212 -ppass -e "show grants for test1212;"
 sleep 5
-mysql -u test1212 -ppass -e "show grants for test1212;"
+mysql -u test1212 -ppass -e "show grants for test12;"
 
 echo "<< Mariadb is installed, and works. >>"
