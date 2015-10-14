@@ -20,8 +20,8 @@ mysql -u test1221 -ppass -e "show grants for test1221@localhost;"
 sleep 5
 #mysql -u test1212 -ppass -e "show grants for test12@localhost;"
 #sleep 3 
-mysql -u test1221 -ppass -e "use test; create table t1 ( t1 varchar(20), t2 varchar(20) );"
-mysql -u test1221 -ppass -e "use test; insert into t1 (t1, t2) values (data1, data2);"
+mysql -u test1221 -ppass -e "use test; create table t1 ( column1 varchar(20), column2 varchar(20) );"
+mysql -u test1221 -ppass -e "use test; insert into t1 (column1, column2) values ('data1', 'data2');"
 mysql -u test1221 -ppass -e "use test; select * from t1;"
 sleep 5
 mysql -u test1221 -ppass -e "use test; drop table t1;"
