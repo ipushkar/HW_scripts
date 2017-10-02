@@ -7,3 +7,4 @@ value2 =raw_input('Enter dir name: ')
 value3 =raw_input('Enter NEW name: ')
 os.rename(value2,value3)
 print 'Complete'
+print 'Great success'
