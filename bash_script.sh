@@ -20,4 +20,5 @@ if [ $? == 0 ]
 		fi
 		else 
 			echo 'Bad path!!'
+			echo 'Chose another path'
 fi
